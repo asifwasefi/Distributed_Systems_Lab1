@@ -6,10 +6,16 @@ import java.net.*;
  */
 public class SimpleFileServer {
 
-    public final static int SOCKET_PORT = 12345;
-    public final static String FILE_TO_SEND = "src/tosend.txt";
 
-    public static void main (String [] args ) throws IOException {
+    private int SOCKET_PORT;
+    private String FILE_TO_SEND;
+
+    public SimpleFileServer(int SOCKET_PORT, String FILE_TO_SEND) {
+        this.SOCKET_PORT = SOCKET_PORT;
+        this.FILE_TO_SEND = "src/"+FILE_TO_SEND;
+    }
+
+    public void start () throws IOException {
         FileInputStream fis = null;
         BufferedInputStream bis = null;
         OutputStream os = null;

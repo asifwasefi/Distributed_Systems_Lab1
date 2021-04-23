@@ -6,15 +6,21 @@ import java.net.*;
  */
 public class SimpleFileClient {
 
-    public final static int SOCKET_PORT = 12345;
+    private int SOCKET_PORT;
+    private String FILE_TO_RECEIVE;
     public final static String SERVER = "127.0.0.1";  // localhost
-    public final static String
-            FILE_TO_RECEIVED = "src/output.txt";
+
 
     public final static int FILE_SIZE = 6022386; // file size temporary hard coded
     // should bigger than the file to be downloaded
 
-    public static void main (String [] args ) throws IOException {
+
+    public SimpleFileClient(int SOCKET_PORT, String FILE_TO_RECEIVE) {
+        this.SOCKET_PORT = SOCKET_PORT;
+        this.FILE_TO_RECEIVE = "src/"+FILE_TO_RECEIVE;
+    }
+
+    public void start() throws IOException {
         int bytesRead;
         int cursor = 0;
         FileOutputStream fos = null;
@@ -27,7 +33,7 @@ public class SimpleFileClient {
             // receive file
             byte [] buffer  = new byte [FILE_SIZE];
             InputStream is = sock.getInputStream();//input stream of server (connect this to fileoutput stream)
-            bos = new BufferedOutputStream(new FileOutputStream(FILE_TO_RECEIVED));
+            bos = new BufferedOutputStream(new FileOutputStream(FILE_TO_RECEIVE));
 
 
 
@@ -42,7 +48,7 @@ public class SimpleFileClient {
 
             bos.write(buffer, 0 , cursor);
             bos.flush();
-            System.out.println("File " + FILE_TO_RECEIVED
+            System.out.println("File " + FILE_TO_RECEIVE
                     + " downloaded (" + cursor + " bytes read)");
         }
         finally {

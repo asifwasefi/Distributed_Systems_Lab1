@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ce6ce3a-5fe4-4c83-ba66-6b7e7ab5c557" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Distributed_Systems_Lab1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFileClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleFileServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clientthread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Serverthread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Distributed_Systems_Lab1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Distributed_Systems_Lab1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Distributed_Systems_Lab1/SimpleFileClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Distributed_Systems_Lab1/SimpleFileClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Distributed_Systems_Lab1/SimpleFileServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Distributed_Systems_Lab1/SimpleFileServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleFileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SimpleFileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleFileServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SimpleFileServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tosend.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +47,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.SimpleFileClient">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="GreetServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GreetServer" />
       <module name="Distributed_Systems_Lab1" />
@@ -73,10 +78,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.SimpleFileClient" />
         <item itemvalue="Application.SimpleFileServer" />
         <item itemvalue="Application.GreetServer" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619133382490</updated>
       <workItem from="1619133384307" duration="96000" />
-      <workItem from="1619140068506" duration="5951000" />
+      <workItem from="1619140068506" duration="9854000" />
     </task>
     <servers />
   </component>
@@ -111,6 +116,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1619195129106">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1619195129106" />
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1619140274463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -119,22 +128,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619141431455" />
-    <state width="1492" height="205" key="GridCell.Tab.0.bottom" timestamp="1619191157570">
+    <state width="1492" height="205" key="GridCell.Tab.0.bottom" timestamp="1619195445876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619191157570" />
-    <state width="1492" height="205" key="GridCell.Tab.0.center" timestamp="1619191157569">
+    <state width="1492" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619195445876" />
+    <state width="1492" height="205" key="GridCell.Tab.0.center" timestamp="1619195445876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619191157569" />
-    <state width="1492" height="205" key="GridCell.Tab.0.left" timestamp="1619191157569">
+    <state width="1492" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619195445876" />
+    <state width="1492" height="205" key="GridCell.Tab.0.left" timestamp="1619195445876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619191157569" />
-    <state width="1492" height="205" key="GridCell.Tab.0.right" timestamp="1619191157569">
+    <state width="1492" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619195445876" />
+    <state width="1492" height="205" key="GridCell.Tab.0.right" timestamp="1619195445876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619191157569" />
+    <state width="1492" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619195445876" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1619140093677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
